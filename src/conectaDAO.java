@@ -24,8 +24,8 @@ public class conectaDAO {
         String senha = System.getenv("MYSQL_PASSWORD");
 
         conn = DriverManager.getConnection(
-            "jdbc:mysql://localhost/uc11",
-            "root",
+            "jdbc:mysql://localhost/uc11?useSSL=false",
+                 "root",
             senha
         );
 
